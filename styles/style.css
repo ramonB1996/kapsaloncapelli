@@ -10,9 +10,9 @@
 
 body {
     font-family: 'glacial';
+    font-size:100%;
     background-color: var(--primary);
     color: var(--secondary);
-    width: 100%;
 }
 
 a.nav-link {
@@ -20,23 +20,35 @@ a.nav-link {
 } 
 
 a.navbar-brand {
+    height:100px;
+    width: 70%;
+    margin-left: 2%;
     color: var(--secondary);
-    font-size: 2.5rem;
-    width: 40%;
+    font-size: 2.5em;
+}
+
+a.navbar-brand:hover {
+    font-weight: 1000;
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+#navbarSupportedContent {
+    margin-right: 2%;
 }
 
 span.subtitle {
     position: relative;
-    font-size: 1.2rem;
-    top: -36px;
+    font-size:0.6em;
+    top: -30px;
 }
 
 a.nav-link {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .content {
-    margin-top: 10%;
+    margin-top: 6%;
 }
 
 .banner-image {
