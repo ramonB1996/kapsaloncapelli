@@ -1,0 +1,87 @@
+:root {
+    --primary: #ede7de;
+    --secondary: #756e65;   
+}
+
+@font-face {
+    font-family: 'glacial';
+    src: url('../fonts/GlacialIndifference-Regular.otf') format('opentype');
+}
+
+body {
+    font-family: 'glacial';
+    background-color: var(--primary);
+    color: var(--secondary);
+    width: 100%;
+}
+
+a.nav-link {
+    text-transform: uppercase;
+} 
+
+a.navbar-brand {
+    color: var(--secondary);
+    font-size: 2.5rem;
+    width: 40%;
+}
+
+span.subtitle {
+    position: relative;
+    font-size: 1.2rem;
+    top: -36px;
+}
+
+a.nav-link {
+    font-size: 1.5rem;
+}
+
+.content {
+    margin-top: 10%;
+}
+
+.banner-image {
+    max-width: 400px;
+    max-height: 500px;
+}
+
+.call-buton .cc-calto-action-ripple {
+	z-index: 99999;
+	position: fixed;
+	right: 6rem;
+	bottom: 6rem;
+	width: 4rem;
+	height: 4rem;
+	padding: 1rem;
+	border-radius: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: var(--primary);
+    background: var(--secondary);
+	-webkit-animation: cc-calto-action-ripple 0.6s linear infinite;
+	animation: cc-calto-action-ripple 0.6s linear infinite;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-items: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-decoration: none; 
+}
+
+.call-buton .cc-calto-action-ripple i {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-size: 2.2rem; }
+.call-buton .cc-calto-action-ripple:hover i {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg); }
+
+span.num{
+    position: absolute;
+    left: -30%;
+    bottom: -50%;
+    color: var(--secondary);
+}
