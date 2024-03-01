@@ -16,51 +16,51 @@ body {
 }
 
 a.nav-link {
+    font-family: 'glacial';
     text-transform: uppercase;
+    color: var(--secondary);
 } 
 
 a.navbar-brand {
-    height:100px;
-    width: 70%;
-    margin-left: 2%;
     color: var(--secondary);
-    font-size: 2.5em;
+    font-size: 2.4em;
+    height: 100px;
 }
 
 a.navbar-brand:hover {
-    font-weight: 1000;
+    font-weight: 400;
     color: var(--secondary);
     cursor: pointer;
 }
 
-#navbarSupportedContent {
-    margin-right: 2%;
+.nav-item {
+    width: 200px;
+}
+
+.navbar-toggler-icon {
+    width: 1.3em;
+    height: 1.3em;
 }
 
 span.subtitle {
     position: relative;
-    font-size:0.6em;
+    font-size:0.5em;
     top: -30px;
 }
 
 a.nav-link {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .content {
     margin-top: 6%;
 }
 
-.banner-image {
-    max-width: 400px;
-    max-height: 500px;
-}
-
 .call-buton .cc-calto-action-ripple {
 	z-index: 99999;
 	position: fixed;
-	right: 6rem;
-	bottom: 6rem;
+	right: 3rem;
+	bottom: 3rem;
 	width: 4rem;
 	height: 4rem;
 	padding: 1rem;
@@ -96,4 +96,22 @@ span.num{
     left: -30%;
     bottom: -50%;
     color: var(--secondary);
+}
+
+@media screen and (max-width: 700px) {
+    .call-buton .cc-calto-action-ripple {
+        right: 3rem;
+        bottom: 3rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .call-buton .cc-calto-action-ripple i {
+        font-size: 1.6rem; 
+    }
+
+    span.num{
+        left: -30%;
+        bottom: -50%;
+    }
 }
