@@ -19,6 +19,11 @@ p {
     font-size: 1.2em;
 }
 
+p.disclaimer {
+    font-size: 1.0em;
+    font-style: italic;
+}
+
 a.nav-link {
     font-family: 'glacial';
     text-transform: uppercase;
@@ -57,7 +62,7 @@ a.nav-link {
 }
 
 .content {
-    margin-top: 6%;
+    margin-top: 5%;
 }
 
 .about-me-content {
