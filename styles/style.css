@@ -15,6 +15,10 @@ body {
     color: var(--secondary);
 }
 
+p {
+    font-size: 1.2em;
+}
+
 a.nav-link {
     font-family: 'glacial';
     text-transform: uppercase;
@@ -54,6 +58,10 @@ a.nav-link {
 
 .content {
     margin-top: 6%;
+}
+
+.about-me-content {
+    margin-top: 10%;
 }
 
 .call-buton .cc-calto-action-ripple {
