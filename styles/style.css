@@ -111,6 +111,10 @@ span.num{
     color: var(--secondary);
 }
 
+.prices p {
+    margin: 0;
+}
+
 @media screen and (max-width: 700px) {
     .call-buton .cc-calto-action-ripple {
         right: 3rem;
