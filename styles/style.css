@@ -15,6 +15,10 @@ body {
     color: var(--secondary);
 }
 
+.content {
+    margin-top: 5%;
+}
+
 p {
     font-size: 1.2em;
 }
@@ -59,10 +63,6 @@ span.subtitle {
 
 a.nav-link {
     font-size: 1.3em;
-}
-
-.content {
-    margin-top: 5%;
 }
 
 .about-me-content {
