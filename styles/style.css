@@ -15,6 +15,14 @@ body {
     color: var(--secondary);
 }
 
+.offcanvas-body {
+    background-color: var(--primary);
+}
+
+.offcanvas-header {
+    background-color: var(--primary);
+}
+
 .content {
     margin-top: 5%;
 }
@@ -36,7 +44,7 @@ a.nav-link {
 
 a.navbar-brand {
     color: var(--secondary);
-    font-size: 2.4em;
+    font-size: 2.2em;
     height: 100px;
 }
 
@@ -55,6 +63,10 @@ a.navbar-brand:hover {
     height: 1.3em;
 }
 
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 span.subtitle {
     position: relative;
     font-size:0.5em;
@@ -66,14 +78,14 @@ a.nav-link {
 }
 
 .call-button-container {
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .call-buton .cc-calto-action-ripple {
 	z-index: 99999;
 	position: fixed;
 	right: 2rem;
-    bottom: 2rem;
+    bottom: 2.5rem;
     width: 3.5rem;
     height: 3.5rem;
 	padding: 1rem;
