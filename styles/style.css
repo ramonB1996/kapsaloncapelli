@@ -15,16 +15,15 @@ body {
     color: var(--secondary);
 }
 
-.offcanvas-body {
-    background-color: var(--primary);
-}
+a.nav-link {
+    font-family: 'glacial';
+    text-transform: uppercase;
+    color: var(--secondary);
+    font-size: 1.3em;
+} 
 
-.offcanvas-header {
-    background-color: var(--primary);
-}
-
-.content {
-    margin-top: 5%;
+.navbar-nav {
+    height: 70px;
 }
 
 p {
@@ -34,47 +33,6 @@ p {
 p.disclaimer {
     font-size: 1.0em;
     font-style: italic;
-}
-
-a.nav-link {
-    font-family: 'glacial';
-    text-transform: uppercase;
-    color: var(--secondary);
-} 
-
-a.navbar-brand {
-    color: var(--secondary);
-    font-size: 2.2em;
-    height: 100px;
-}
-
-a.navbar-brand:hover {
-    font-weight: 400;
-    color: var(--secondary);
-    cursor: pointer;
-}
-
-.nav-item {
-    width: 200px;
-}
-
-.navbar-toggler-icon {
-    width: 1.3em;
-    height: 1.3em;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
-span.subtitle {
-    position: relative;
-    font-size:0.5em;
-    top: -30px;
-}
-
-a.nav-link {
-    font-size: 1.3em;
 }
 
 .call-button-container {

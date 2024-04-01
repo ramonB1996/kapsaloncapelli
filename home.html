@@ -14,63 +14,37 @@
      <script src="https://kit.fontawesome.com/2240ceddbe.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-xxl">
-            <div class="container-xxl">
-                <a class="navbar-brand" href="/">Kapsalon Capelli <br><span class="subtitle">Schoonhoven</span></a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header justify-content-end">
-                      <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                      <ul class="navbar-nav justify-content-end flex-grow-1 pb-3">
-                        <li class="nav-item">
-                            <a class="nav-link active text-end" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-end" aria-current="page" href="/Over">Over</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-end" aria-current="page" href="/Prijzen">Prijzen</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-end" aria-current="page" href="/Contact">Contact</a>
-                        </li>
-                    </div>
-                </div>
+    <div class="container-xxl g-0">
+        <nav class="navbar p-0">
+            <div class="navbar-nav w-100 flex-row justify-content-around align-items-center">
+                <a class="nav-item nav-link active" href="/">Home</a>
+                <a class="nav-item nav-link" href="/Over">Over</a>
+                <a class="nav-item nav-link" href="/Prijzen">Prijzen</a>
+                <a class="nav-item nav-link" href="/Contact">Contact</a>
             </div>
+
+            <img class="img-fluid" src="images/banner.pdf" alt="banner"/>
         </nav>
-
-        <div class="content">
-            <div class="row justify-content-center">
-                <div class="col-10">
-                    <a href="/Over"><img class="img-fluid" src="images/about-banner.pdf" alt="Over"/></a>
-                </div>
-            </div>
-            <div class="row mt-4 justify-content-center">
-                <div class="col-10">
-                    <a href="/Prijzen"><img class="img-fluid" src="images/prices-banner.pdf" alt="Prijzen"/></a>
-                </div>
-            </div>
-            <div class="row mt-4 justify-content-center">
-                <div class="col-10">
-                    <a href="/Contact"><img class="img-fluid" src="images/contact-banner.pdf" alt="Contact"/></a>
-                </div>
-            </div>
-        </div>
-    
-        <div class="container text-center mt-4">
+        
+        <div class="text-center my-5">
             <h3>"Wat betekent Capelli eigenlijk?"</h3>
             <p>
                 Capelli is het Italiaanse woord voor kapsel.
                 Mijn liefde voor Italië en het kappersvak is allebei groot, daarom wil ik dit graag met elkaar combineren.<br><br>
                 Kom langs en geniet van een heerlijk kopje koffie uit de espressomachine met een Italiaanse lekkernij.
             </p>           
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-10 col-lg-4">
+                <a href="/Over"><img class="img-fluid rounded" src="images/about-banner.pdf" alt="Over"/></a>
+            </div>
+            <div class="col-10 m-2 col-lg-4 m-lg-0">
+                <a href="/Prijzen"><img class="img-fluid rounded" src="images/prices-banner.pdf" alt="Prijzen"/></a>
+            </div>
+            <div class="col-10 col-lg-4">
+                <a href="/Contact"><img class="img-fluid rounded" src="images/contact-banner.pdf" alt="Contact"/></a>
+            </div>
         </div>
     
         <div class="container call-button-container">
