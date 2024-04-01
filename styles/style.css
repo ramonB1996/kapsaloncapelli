@@ -65,17 +65,13 @@ a.nav-link {
     font-size: 1.3em;
 }
 
-.about-me-content {
-    margin-top: 10%;
-}
-
 .call-buton .cc-calto-action-ripple {
 	z-index: 99999;
 	position: fixed;
-	right: 3rem;
-	bottom: 3rem;
-	width: 4rem;
-	height: 4rem;
+	right: 2rem;
+    bottom: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
 	padding: 1rem;
 	border-radius: 100%;
 	-webkit-box-sizing: border-box;
@@ -99,36 +95,20 @@ a.nav-link {
 .call-buton .cc-calto-action-ripple i {
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
-    font-size: 2.2rem; }
+    font-size: 1.6rem; }
+    
 .call-buton .cc-calto-action-ripple:hover i {
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg); }
 
 span.num{
     position: absolute;
-    left: -30%;
+    left: -20%;
     bottom: -50%;
+    font-size: 0.9rem;
     color: var(--secondary);
 }
 
 .prices p {
     margin: 0;
-}
-
-@media screen and (max-width: 700px) {
-    .call-buton .cc-calto-action-ripple {
-        right: 3rem;
-        bottom: 3rem;
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-
-    .call-buton .cc-calto-action-ripple i {
-        font-size: 1.6rem; 
-    }
-
-    span.num{
-        left: -30%;
-        bottom: -50%;
-    }
 }
