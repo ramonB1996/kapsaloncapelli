@@ -14,41 +14,22 @@
      <script src="https://kit.fontawesome.com/2240ceddbe.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-xxl">
-            <div class="container-xxl">
-                <a class="navbar-brand" href="#">Kapsalon Capelli <br><span class="subtitle">Schoonhoven</span></a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header justify-content-end">
-                      <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                      <ul class="navbar-nav justify-content-end flex-grow-1 pb-3">
-                        <li class="nav-item">
-                            <a class="nav-link active text-end" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-end" aria-current="page" href="#">Over</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-end" aria-current="page" href="#">Prijzen</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-end" aria-current="page" href="#">Contact</a>
-                        </li>
-                    </div>
-                </div>
+    <div class="container-xxl g-0">
+        <nav class="navbar p-0">
+            <div class="navbar-nav w-100 flex-row justify-content-around align-items-center">
+                <a class="nav-item nav-link active" href="/">Home</a>
+                <a class="nav-item nav-link" href="/Over">Over</a>
+                <a class="nav-item nav-link" href="/Prijzen">Prijzen</a>
+                <a class="nav-item nav-link" href="/Contact">Contact</a>
             </div>
+
+            <img class="img-fluid" src="images/banner.pdf" alt="banner"/>
         </nav>
 
-        <div class="container-xxl">
-            <div class="row content justify-content-center">
-                <div class="col-8">
+        <!-- Mobile -->
+        <div class="d-md-none">
+            <div class="row justify-content-center align-items-center my-4">
+                <div class="col-12 p-4">
                     <h4><strong>Hoi!</strong></h4>
                     <p>
                         Mijn naam is Melissa, ik ben 24 jaar en ik ben eigenaresse van Kapsalon Capelli.
@@ -67,12 +48,61 @@
                         De komende periode ben ik van plan om meerdere cursussen te volgen om mijn kennis te blijven vergroten.
                     </p>
                 </div>
-                <div class="col-4">
-                    <img class="img-fluid align-self-center" src="images/about_me_banner.jpeg" alt="Over mij"/>
+                <div class="col-6">
+                    <img class="img-fluid align-self-start" src="images/about_me_banner.jpeg" alt="Over mij"/>
                 </div>
             </div>
+    
+            <div class="row justify-content-center align-items-center mt-4">
+                <div class="col-12 p-4">
+                    <h4><strong>Waar sta ik voor?</strong></h4>
+                    <p>
+                        Het belangrijkste in het kappersvak, vind ik luisteren naar de klant en hier uitgebreid tijd voor nemen.
+                        Er is altijd ruimte voor vragen en om te vertellen wat je voor ogen hebt.
+                        Heb je een foto van wat je wil? Super!
+                        Dan bespreken we samen de mogelijkheden voor het mooiste resultaat met behoud van de beste haarkwaliteit.
+                    </p>
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid align-self-start" src="images/coloring_banner.jpeg" alt="Verf en kleuren"/>
+                </div>        
+            </div>
+    
+            <div class="row justify-content-center align-items-center mt-4">
+                <div class="col-12 p-4">
+                    <h4><strong>Producten</strong></h4>
+                    <p>
+                        Ik werk met drie verschillende kappersmerken, namelijk; Vitality's, Kiss en Maria Nila.
+                        Om het mooiste resultaat te bereiken, worden de beste producten van deze merken met elkaar gecombineerd.
+                    </p>
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid align-self-start" src="images/products_banner.jpeg" alt="Producten en merken"/>
+                </div>  
+            </div>
+        </div>
 
-                    
+        <!-- Desktop layout -->
+        <div class="d-none d-md-block">
+            <div class="row justify-content-center align-items-center my-4">
+                <div class="col-6">
+                    <h4><strong>Hoi!</strong></h4>
+                    <p>
+                        Mijn naam is Melissa, ik ben 24 jaar en ik ben eigenaresse van Kapsalon Capelli.
+                        Op dit moment nog een salon vanuit huis of bij jou thuis.
+                    </p>
+                    <h4 class="mt-4"><strong>Passie</strong></h4>
+                    <p>
+                        Mijn passie voor het kappersvak heb ik al sinds ik klein ben. 
+                        Ik was altijd bezig met haren invlechten en kapsalonnetje spelen.
+                        Het was mijn droom om later mijn eigen kapsalon te runnen!
+                    </p>
+                    <p>
+                        Ik heb de opleiding Hairstylist aan de Nederlandse Kappers Akademie succesvol afgerond.
+                        Daarnaast heb ik de opleiding Blonding Masters gevolgd bij de Masters of Balayage, 
+                        om mijn liefde voor kleuren nóg beter in de praktijk te kunnen brengen. 
+                        De komende periode ben ik van plan om meerdere cursussen te volgen om mijn kennis te blijven vergroten.
+                    </p>
                     <h4 class="mt-4"><strong>Waar sta ik voor?</strong></h4>
                     <p>
                         Het belangrijkste in het kappersvak, vind ik luisteren naar de klant en hier uitgebreid tijd voor nemen.
@@ -86,16 +116,13 @@
                         Om het mooiste resultaat te bereiken, worden de beste producten van deze merken met elkaar gecombineerd.
                     </p>
                 </div>
-                <div class="offset-2 col-3 content">
-                    <img class="img-fluid mx-2" src="images/coloring_banner.jpeg" alt="Verf en kleuren"/>
-                    <img class="img-fluid m-2" src="images/products_banner.jpeg" alt="Producten en merken"/>
+                <div class="offset-1 col-3">
+                    <img class="img-fluid my-2" src="images/about_me_banner.jpeg" alt="Over mij"/>
+                    <img class="img-fluid" src="images/coloring_banner.jpeg" alt="Verf en kleuren"/>
+                    <img class="img-fluid my-2" src="images/products_banner.jpeg" alt="Producten en merken"/>
                 </div>
             </div>
         </div>
-    
-        <section class="call-buton">
-            <a class="cc-calto-action-ripple" href="tel:+31623080216"><i class="fa fa-phone"></i><span class="num">0623080216</span></a>
-        </section>
     </div>
 </body>
 </html>
