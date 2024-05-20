@@ -14,143 +14,95 @@
      <script src="https://kit.fontawesome.com/2240ceddbe.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-xxl g-0">
         <nav class="navbar navbar-expand-xxl">
             <div class="container-xxl">
-                <a class="navbar-brand" href="#">Kapsalon Capelli <br><span class="subtitle">Schoonhoven</span></a>
+                <a class="navbar-brand" href="/">
+                    <img src="images/navbar-image.png" class="img-fluid" width="400px" alt="navigatiebalk logo en naam"/>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header justify-content-end">
+                      <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-around align-items-center flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/Over">Over</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/Prijzen">Prijzen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/Contact">Contact</a>
+                        </li>
+                    </div>
+                </div>
             </div>
         </nav>
 
-        <div class="container-xxl content prices">
-            <div class="row">
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-8">
-                            <p>Knippen dame</p>
-                        </div>
-                        <div class="col-4">
-                            <p>€20.-</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <p>Knippen heer</p>
-                        </div>
-                        <div class="col-4">
-                            <p>€20.-</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <p>Knippen t/m 12 jaar</p>
-                        </div>
-                        <div class="col-4">
-                            <p>€12,50.-</p>
-                        </div>
-                    </div>
-                    <div class="row mt-6">
-                        <div class="col-8">
-                            <p>Uitgroei verven</p>
-                        </div>
-                        <div class="col-4">
-                            <p>€30.-</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <p>Uitgroei + highlights bovenop</p>
-                        </div>
-                        <div class="col-4">
-                            <p>€60.-</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <p>Kleuren volledig</p>
-                        </div>
-                        <div class="col-4">
-                            <p>€50.-</p>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-8">
-                            <p>Highlights deel</p>
-                        </div>
-                        <div class="col-4">
-                            <p>€60.-</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <p>Highlights volledig</p>
-                        </div>
-                        <div class="col-4">
-                            <p>€80.-</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <p>Babylights deel</p>
-                        </div>
-                        <div class="col-4">
-                            <p>€90.-</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <p>Babylights volledig</p>
-                        </div>
-                        <div class="col-4">
-                            <p>€120.-</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <p>Balayage deel</p>
-                        </div>
-                        <div class="col-4">
-                            <p>€60.-</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <p>Balayage volledig</p>
-                        </div>
-                        <div class="col-4">
-                            <p>€80.-</p>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-8">
-                            <p>Toner</p>
-                        </div>
-                        <div class="col-4">
-                            <p>€20.-</p>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12">
-                            <p class="disclaimer">
-                                Alle prijzen voor kleuren zijn vanaf prijzen.
-                                Eventueel toeslag voor lang/ dik haar.
-                            </p>
-                            <p class="disclaimer mt-2">
-                                Heb je vragen over de mogelijkheden?
-                                Neem dan contact met mij op.
-                            </p>
-                        </div>
-                    </div>
+        <!-- Mobile layout -->
+        <div class="d-md-none">
+
+        </div>
+
+        <!-- Desktop layout -->
+        <div class="d-none d-md-block">
+            <div class="row justify-content-center my-4 prices">
+                <div class="col-3">
+                    <p>Knippen dame</p>
+                    <p>Knippen heer</p>
+                    <p>Knippen t/m 12 jaar</p>
+
+                    <p class="mt-4">Uitgroei verven</p>
+                    <p>Uitgroei + highlights bovenop</p>
+                    <p>Kleuren volledig</p>
+
+                    <p class="mt-4">Highlights deel</p>
+                    <p>Highlights volledig</p>
+                    <p>Babylights deel</p>
+                    <p>Babylights volledig</p>
+                    <p>Balayage deel</p>
+                    <p>Balayage volledig</p>
+
+                    <p class="mt-4">Toner</p>
+
+                    <p class="mt-4 fst-italic disclaimer">Alle prijzen voor kleuren zijn vanaf,<br/>eventueel toeslag voor lang/ dik haar.</p>
+                    <p class="mt-4 fst-italic disclaimer">Heb je vragen over de mogelijkheden? <br/>Neem dan contact met mij op.</p>
                 </div>
-            </div>
-            <div class="row justify-content-center mt-4">
-                <div class="col-6">
+                <div class="col-2">
+                    <p>€20,-</p>
+                    <p>€20,-</p>
+                    <p>€12,50</p>
+
+                    <p class="mt-4">€30,-</p>
+                    <p>€60,-</p>
+                    <p>€50,-</p>
+
+                    <p class="mt-4">€60,-</p>
+                    <p>€80,-</p>
+                    <p>€90,-</p>
+                    <p>€120,-</p>
+                    <p>€60,-</p>
+                    <p>€80,-</p>
+
+                    <p class="mt-4">€20,-</p>
+                </div>
+                <div class="col-2">
                     <img class="img-fluid align-self-center" src="images/flowers.png" alt="Bloemen"/>
                 </div>
-                <div class="col-6">
+                <div class="col-3">
                     <img class="img-fluid align-self-center" src="images/pricing-banner.jpeg" alt="Prijzen banner"/>
                 </div>
             </div>
-       </div>
+        </div>
     </div>
 </body>
 </html>

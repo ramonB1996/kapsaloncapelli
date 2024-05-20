@@ -15,15 +15,37 @@
 </head>
 <body>
     <div class="container-xxl g-0">
-        <nav class="navbar p-0">
-            <div class="navbar-nav w-100 flex-row justify-content-around align-items-center">
-                <a class="nav-item nav-link active" href="/">Home</a>
-                <a class="nav-item nav-link" href="/Over">Over</a>
-                <a class="nav-item nav-link" href="/Prijzen">Prijzen</a>
-                <a class="nav-item nav-link" href="/Contact">Contact</a>
-            </div>
+        <nav class="navbar navbar-expand-xxl">
+            <div class="container-xxl">
+                <a class="navbar-brand" href="/">
+                    <img src="images/navbar-image.png" class="img-fluid" width="400px" alt="navigatiebalk logo en naam"/>
+                </a>
 
-            <img class="img-fluid" src="images/banner.pdf" alt="banner"/>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header justify-content-end">
+                      <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-around align-items-center flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/Over">Over</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/Prijzen">Prijzen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/Contact">Contact</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
         </nav>
 
         <!-- Mobile layout -->
@@ -89,8 +111,8 @@
 
         <!-- Desktop layout -->
         <div class="d-none d-md-block">
-            <div class="row justify-content-center align-items-center my-4">
-                <div class="col-6">
+            <div class="row justify-content-center align-items-start my-4">
+                <div class="col-6 mt-4">
                     <h4><strong>Hoi!</strong></h4>
                     <p>
                         Mijn naam is Melissa, ik ben 24 jaar en ik ben eigenaresse van Kapsalon Capelli.
@@ -122,9 +144,9 @@
                     </p>
                 </div>
                 <div class="offset-1 col-3">
+                    <img class="img-fluid my-2" src="images/coloring_banner.jpeg" alt="Verf en kleuren"/>
+                    <img class="img-fluid" src="images/products_banner.jpeg" alt="Producten en merken"/>
                     <img class="img-fluid my-2" src="images/about_me_banner.jpeg" alt="Over mij"/>
-                    <img class="img-fluid" src="images/coloring_banner.jpeg" alt="Verf en kleuren"/>
-                    <img class="img-fluid my-2" src="images/products_banner.jpeg" alt="Producten en merken"/>
                 </div>
             </div>
         </div>
