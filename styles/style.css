@@ -38,7 +38,7 @@ a.nav-link {
     box-shadow: none;
 }
 
-p {
+span,p {
     font-size: 1.2em;
 }
 
@@ -47,12 +47,8 @@ p.disclaimer {
     font-style: italic;
 }
 
-.prices p {
+.no-margins p {
     margin: 0;
-}
-
-span {
-    font-size: 1.4em;
 }
 
 @media only screen and (max-width: 1399px) {
