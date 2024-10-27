@@ -1,6 +1,7 @@
 :root {
     --primary: #ede7de;
     --secondary: #756e65;   
+    --tertiairy: #cdc1b1;
 }
 
 @font-face {
@@ -26,8 +27,16 @@ a.nav-link {
     font-size: 1.3em;
 } 
 
-hr {
-    color: var(--secondary);
+.footer {
+    background-color: var(--tertiairy);
+}
+
+.footer span{
+    color: black;
+}
+
+.footer h3 {
+    color: black;
 }
 
 .navbar-nav {
