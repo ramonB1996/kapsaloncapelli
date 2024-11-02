@@ -39,6 +39,10 @@ a.nav-link {
     color: black;
 }
 
+.footer-img {
+    margin-right: 10px;
+}
+
 .navbar-nav {
     height: 70px;
 }
