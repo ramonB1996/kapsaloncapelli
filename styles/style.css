@@ -43,6 +43,14 @@ a.nav-link {
     margin-right: 10px;
 }
 
+.contact span {
+    color: black;
+}
+
+.contact h3 {
+    color: black;
+}
+
 .navbar-nav {
     height: 70px;
 }
