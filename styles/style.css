@@ -27,6 +27,12 @@ a.nav-link {
     font-size: 1.3em;
 } 
 
+a.nav-link.active {
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
 .footer {
     background-color: var(--tertiairy);
 }
