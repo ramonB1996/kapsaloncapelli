@@ -67,7 +67,7 @@
                     <div class="col-12">
                         <h4><strong>Hoi!</strong></h4>
                         <p>
-                            Mijn naam is Melissa Koolhaas, ik ben 24 jaar en ik ben eigenaresse van Kapsalon Capelli.
+                            Mijn naam is Melissa Koolhaas, ik ben <span id="age_mobile" style="font-size: 1em;"></span> jaar en ik ben eigenaresse van Kapsalon Capelli.
                         </p>
                     </div>
                     <div class="col-6 my-4">
@@ -229,7 +229,7 @@
                 <div class="col-6 mt-5">
                     <h4><strong>Hoi!</strong></h4>
                     <p>
-                        Mijn naam is Melissa Koolhaas, ik ben 24 jaar en ik ben eigenaresse van Kapsalon Capelli.
+                        Mijn naam is Melissa Koolhaas, ik ben <span id="age_desktop" style="font-size: 1em;"></span> jaar en ik ben eigenaresse van Kapsalon Capelli.
                     </p>
                     <h4 class="mt-5"><strong>Passie</strong></h4>
                     <p>
@@ -336,5 +336,26 @@
             </div>
         </div>
     </div>
+
+
+    <script type="text/javascript">
+        (function() {
+            var age = getAge("1999-12-17");
+            document.getElementById('age_mobile').innerHTML = age;
+            document.getElementById('age_desktop').innerHTML = age;
+        })();
+
+
+        function getAge(dateString) {
+            var today = new Date();
+            var birthDate = new Date(dateString);
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            return age;
+        }
+    </script>
 </body>
 </html>
