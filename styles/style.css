@@ -90,6 +90,11 @@ p.disclaimer {
     margin-bottom: 0.3rem;
 }
 
+p strong {
+    color: black;
+    font-style: italic;
+}
+
 @media only screen and (max-width: 1399px) {
     ul.navbar-nav{
         margin-top: 40px;
