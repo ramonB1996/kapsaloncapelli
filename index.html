@@ -18,9 +18,24 @@
      <script src="https://kit.fontawesome.com/2240ceddbe.js" crossorigin="anonymous"></script>
 
      <!-- Salonized -->
-     <script src="https://static-widget.salonized.com/loader.js"></script>               
+     <script src="https://static-widget.salonized.com/loader.js"></script>   
+     
+     <script>
+        window.onload = (event) => {
+            var myModal = new bootstrap.Modal(document.getElementById('notAvailableModal'), {});
+            myModal.show();
+        };
+
+        function hideModal() {
+            document.getElementById('notAvailableModal').classList.remove('show');
+            document.getElementById('notAvailableModal').style.display = 'none';
+            document.body.classList.remove('modal-open');
+            document.querySelector('.modal-backdrop').remove();        
+        }
+     </script>
 </head>
 <body>
+    <!-- Salonized -->
     <div class="salonized-booking" data-company="Q7r5Nj4nuBBa8zHpdTiYfxVC" data-color="#FF6575" data-language="nl" data-position="right" data-outline="shadow"></div>
 
     <div class="container-xxl g-0">
@@ -281,6 +296,35 @@
                 <div class="col-4 d-flex justify-content-center align-items-center">
                     <img src="images/kapsalon_landscape.png" class="img-fluid"/>      
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="notAvailableModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle"><strong>Zwangerschapsverlof</strong></h5>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <p>Op dit moment ben ik met zwangerschapsverlof en hierdoor is de salon tijdelijk gesloten.</p>
+                    <p>Houd mijn social media of deze website in de gaten om te weten wanneer de agenda weer open gaat.</p>
+                    <p>Hopelijk tot snel!</p>
+                    <span>Liefs,</span><br/>
+                    <span>Melissa</span><br/><br/>
+
+                    <div class="row">
+                        <div class="offset-2 col-8">
+                            <img src="images/zwangerschapsverlof.jpg" class="img-fluid"/>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="modal-footer">
+                <button type="button" onclick="hideModal()" class="btn btn-primary" data-dismiss="modal">Sluiten</button>
+            </div>
             </div>
         </div>
     </div>

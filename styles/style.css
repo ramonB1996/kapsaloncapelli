@@ -16,6 +16,13 @@ body {
     color: var(--secondary);
 }
 
+.modal-content {
+    font-family: 'glacial';
+    font-size:100%;
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
 a {
     text-decoration: none;
     color: var(--secondary);
